@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Créditos de imágenes | La Plaza Delivery</title>
+  <meta name="theme-color" content="#090806">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .credits-page {
+      min-height: 100vh;
+      background:
+        radial-gradient(ellipse 50% 45% at 85% 0%, rgba(255, 106, 26, 0.12), transparent 70%),
+        var(--ink);
+    }
+    .credits-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .credits-brand {
+      font-family: var(--font-display);
+      font-size: 21px;
+      letter-spacing: 0.06em;
+    }
+    .credits-brand small {
+      display: block;
+      margin-top: 2px;
+      color: var(--orange);
+      font-family: var(--font-body);
+      font-size: 7px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+    }
+    .credits-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255, 244, 227, 0.58);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      transition: color 0.25s ease;
+    }
+    .credits-back:hover { color: var(--orange); }
+    .credits-main { max-width: 900px; padding: clamp(65px, 9vw, 115px) 0 100px; }
+    .credits-main h1 {
+      max-width: 700px;
+      margin-top: 16px;
+      font-family: var(--font-display);
+      font-size: clamp(3.6rem, 8vw, 7rem);
+      font-weight: 400;
+      line-height: 0.88;
+      text-transform: uppercase;
+    }
+    .credits-main h1 em {
+      color: var(--orange);
+      font-family: var(--font-script);
+      font-size: 1.1em;
+      font-style: normal;
+      line-height: 0.65;
+      text-transform: none;
+    }
+    .credits-intro {
+      max-width: 560px;
+      margin-top: 24px;
+      color: rgba(255, 244, 227, 0.6);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    .credits-list {
+      display: grid;
+      gap: 0;
+      margin-top: 48px;
+      border-top: 1px solid var(--line);
+    }
+    .credits-item {
+      display: grid;
+      grid-template-columns: minmax(150px, 0.7fr) minmax(0, 1.3fr);
+      gap: 24px;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .credits-item strong {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+    .credits-item p {
+      color: rgba(255, 244, 227, 0.57);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    .credits-item a {
+      color: var(--gold);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      transition: color 0.25s ease;
+    }
+    .credits-item a:hover { color: var(--orange); }
+    .credits-note {
+      max-width: 720px;
+      margin-top: 30px;
+      color: rgba(255, 244, 227, 0.35);
+      font-size: 11px;
+      line-height: 1.65;
+    }
+    .credits-actions { margin-top: 36px; }
+    .credits-footer {
+      padding: 22px 0 30px;
+      border-top: 1px solid var(--line);
+      color: rgba(255, 244, 227, 0.3);
+      font-size: 9px;
+      letter-spacing: 0.06em;
+    }
+    @media (max-width: 620px) {
+      .credits-header { padding: 18px 0; }
+      .credits-back { font-size: 8px; }
+      .credits-main { padding-top: 55px; }
+      .credits-item { grid-template-columns: 1fr; gap: 6px; padding: 18px 0; }
+      .credits-item strong { font-size: 18px; }
+    }
+  </style>
+</head>
+<body class="credits-page">
+  <header class="credits-header container">
+    <a class="credits-brand" href="index.html">LA PLAZA<small>DELIVERY · LABRANZA</small></a>
+    <a class="credits-back" href="index.html">← Volver al sitio</a>
+  </header>
+
+  <main class="credits-main container">
+    <p class="kicker"><span>Info</span> Créditos</p>
+    <h1>Las <em>fotos</em><br>y el mapa.</h1>
+    <p class="credits-intro">
+      Este sitio usa imágenes de apoyo para mostrar la carta y la identidad del negocio.
+      Estas son las fuentes y licencias de las fotografías utilizadas.
+    </p>
+
+    <div class="credits-list">
+      <div class="credits-item">
+        <strong>Sushi, hamburguesa y papas</strong>
+        <p>Fotografías de <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a>, utilizadas bajo la licencia de Unsplash.</p>
+      </div>
+      <div class="credits-item">
+        <strong>Coca-Cola</strong>
+        <p>Foto de Kanesue, vía Wikimedia Commons, bajo <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>. <a href="https://commons.wikimedia.org/wiki/File:Bottle_of_Coca-Cola_with_a_glass_(52267699916).jpg" target="_blank" rel="noopener noreferrer">Ver archivo original</a>.</p>
+      </div>
+      <div class="credits-item">
+        <strong>Salchipapa</strong>
+        <p>Foto de Josefito123, vía Wikimedia Commons, bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>. <a href="https://commons.wikimedia.org/wiki/File:Salchipapas_20220704_121159.jpg" target="_blank" rel="noopener noreferrer">Ver archivo original</a>.</p>
+      </div>
+      <div class="credits-item">
+        <strong>Chorrillana</strong>
+        <p>Foto de Josivaldo de Souza, vía Wikimedia Commons, bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>. <a href="https://commons.wikimedia.org/wiki/File:CHORILLANAS_(cropped).jpg" target="_blank" rel="noopener noreferrer">Ver archivo original</a>.</p>
+      </div>
+      <div class="credits-item">
+        <strong>Handroll</strong>
+        <p>Foto de Andy Li, vía Wikimedia Commons, liberada bajo <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0</a>. <a href="https://commons.wikimedia.org/wiki/File:Sushi_hand_roll_combo_set_B_-_Goemon_Hand_Roll_Bar_2024-09-12.jpg" target="_blank" rel="noopener noreferrer">Ver archivo original</a>.</p>
+      </div>
+      <div class="credits-item">
+        <strong>Completo</strong>
+        <p>Foto de Paul Lowry, vía Wikimedia Commons, bajo <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>. <a href="https://commons.wikimedia.org/wiki/File:Completo_italiano.jpg" target="_blank" rel="noopener noreferrer">Ver archivo original</a>.</p>
+      </div>
+      <div class="credits-item">
+        <strong>Fotografía del local</strong>
+        <p>Imagen de la fachada proporcionada por el negocio.</p>
+      </div>
+      <div class="credits-item">
+        <strong>Medios de pago</strong>
+        <p>Logotipos de Webpay Plus, Visa, Mastercard, Magna, American Express, Diners Club y Redcompra proporcionados por el negocio.</p>
+      </div>
+      <div class="credits-item">
+        <strong>Logo Junaeb</strong>
+        <p>Imagen proporcionada por el negocio para identificar el beneficio Junaeb.</p>
+      </div>
+      <div class="credits-item">
+        <strong>Mapa</strong>
+        <p>Mapa proporcionado por el negocio como referencia del sector Los Alerces, Labranza, Temuco.</p>
+      </div>
+    </div>
+
+    <p class="credits-note">
+      Las fotos de Wikimedia Commons fueron recortadas para adaptarse a las tarjetas del sitio.
+      Las versiones recortadas de las imágenes CC BY-SA 4.0 se comparten bajo la misma licencia.
+    </p>
+
+    <div class="credits-actions">
+      <a class="btn btn--orange" href="index.html">
+        Volver a La Plaza
+        <svg class="icon btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </main>
+
+  <footer class="credits-footer container">
+    © 2026 La Plaza Delivery · Labranza, Temuco
+  </footer>
+</body>
+</html>
